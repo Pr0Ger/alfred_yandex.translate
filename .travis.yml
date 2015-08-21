@@ -1,0 +1,13 @@
+language: bash
+install:
+  - pip install --target=. Alfred-Workflow
+script:
+  - zip  -r yandex.translate.alfredworkflow . -x "*.git*"
+deploy:
+  provider: releases
+  api_key:
+    secure: cJ1fXv7MT0FCvDTL5/XYLlZL7oyznsDFzVUDAENe7EV4CJGgoPUftJfjnDc57d8cS7AwSHgiZr5g3QIHYBxHoHBLasvV1kRiwU9VkczkS1y5rmd/nkLqbRwI9jUSaE8+v0zlOVhhzCvS8sMtC95gvmh13zFdhqaUzjbv2Kw2FDrZTFn23Z7eraPaW3zzXUl/3Ez2CQmtYlicYnu93CGwTZFeEVeQ+ytE8w3HNP74AOuboPy6SOAjsq3t4kUc2oV/JMBPOCE7FXyfTfh9KaJRa2TxFd+6iq7VZG3mYvrU1E+zpHSq4/xLgN8pDAOWnkI1XrbJG1t4ulifPlIb4bCmPFpaFn9Hza7ZYPxnofQ5dwF7X5/1YajXIin2G3a0oyGlgjcll/XPeZuhcnxSvMCDacDlCj0t3zX1JZK0Ee/jduSyPylssxh8GwDnfKjKFHsXJXJq6nAwB3HSeqgyb6EmZOku0ZeumhgwZcr9cIFp2z5T9aOhM6VraEbnl/F8qaUZhWuXpF13WGEj2ivR6TYTWYpcljKST7GGTYVDQFzFPlhooh5+cWYj3joT+GBVQkMVsdiGR+raHJJMx5xnxepnXqzU/yG4ZxiXC6Xi+pBwGYWmaDYiZik89CvdWg94QVbxoQJxoi8AY2OgCEL4JtAFHL0ldVqpBZ2TZOH2ef5HQ2o=
+  file: yandex.translate.alfredworkflow
+  skip_cleanup: true
+  on:
+    repo: Pr0Ger/alfred_yandex.translate
