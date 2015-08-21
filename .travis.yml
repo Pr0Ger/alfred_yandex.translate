@@ -10,4 +10,5 @@ deploy:
   file: yandex.translate.alfredworkflow
   skip_cleanup: true
   on:
+    tags: true
     repo: Pr0Ger/alfred_yandex.translate
