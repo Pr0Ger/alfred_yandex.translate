@@ -2,6 +2,7 @@ language: bash
 install:
   - pip install --target=. Alfred-Workflow
 script:
+  - git describe --abbrev=0 > version
   - zip  -r yandex.translate.alfredworkflow . -x "*.git*"
 deploy:
   provider: releases

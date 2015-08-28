@@ -29,5 +29,8 @@ def main(wf):
     wf.send_feedback()
 
 if __name__ == u"__main__":
+    update_settings = {
+        'github_slug': 'Pr0Ger/alfred_yandex.translate',
+    }
     wf = Workflow()
     sys.exit(wf.run(main))
