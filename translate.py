@@ -32,5 +32,5 @@ if __name__ == u"__main__":
     update_settings = {
         'github_slug': 'Pr0Ger/alfred_yandex.translate',
     }
-    wf = Workflow()
+    wf = Workflow(update_settings = update_settings)
     sys.exit(wf.run(main))
