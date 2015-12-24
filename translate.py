@@ -14,7 +14,8 @@ def main(wf):
 
     result = r.json()
 
-    wf.add_item(title=result['text'][0], subtitle='-> RU')
+    value = result['text'][0]
+    wf.add_item(title=value, arg=value, subtitle='-> RU', valid=True)
 
     # EN
     params = dict(key=API_KEY, lang='en', text=wf.args[0])
@@ -24,7 +25,8 @@ def main(wf):
 
     result = r.json()
 
-    wf.add_item(title=result['text'][0], subtitle='-> EN')
+    value = result['text'][0]
+    wf.add_item(title=value, arg=value, subtitle='-> EN', valid=True)
 
     wf.send_feedback()
 
