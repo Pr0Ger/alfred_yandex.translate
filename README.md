@@ -12,4 +12,3 @@ Just download latest [workflow file](https://github.com/Pr0Ger/alfred_yandex.tra
 
 - Add support for another language
 - Detect text language (to prevent redundant translations like en -> en)
-- Auto-updating
